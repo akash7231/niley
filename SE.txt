@@ -1,0 +1,168 @@
+Requirement Analysis
+Test Planning
+Test Case Development
+Environment Setup
+Test Execution
+Test Cycle Closure
+
+
+
+
+UFT
+functional testing tool
+concerned with executoin part of testing
+record and playback.
+3 addins 
+web
+active
+VB
+record and playback
+types:
+default
+analog
+std checkpoin
+datatable parameterization
+Object Repository
+it stores the objects and it stores the unique info abt
+every object so that while running qtp identifies them
+
+
+--------------------------------------------------------------------------------
+
+
+
+test Lab
+create folder
+may 2013 releases
+test set build 213
+diff tabs like
+details execution grid
+execution flow
+attachments
+linked defects
+details   : login and reg tests
+execution grid :Select tests 
+show all tests and select the login n reg tests
+select a test suppose invalid login
+click on run button
+deails of all step
+execute them manual and select pass/fail for every step
+give actaul result vs the expected ones
+stop run
+even if a single step fail the whole test is failed
+if invalid login suppose is failed
+go to req taba abd refresh, you will now see the
+status as failed in req tab also
+becuse this test was linked with reqin this way all 3 modules are connected
+also you can select responsible tester for testsand planned dates and times
+execution date and time will come when you run the test
+
+-------------------------------------------------------------------------------------
+
+
+
+
+
+tester logs innew defect
+summaryseverity
+test casepriority
+reproducible
+steps to reproduce in the descriassigned to : developerstatus is new
+-----------------------
+project manager first has to change the status of this defect to open
+-------------------------------------
+developer logs in check the defect fixes ithe can give comments that fixed itand change status to fixedalso actual fix time req he can give
+-----------------------------------------
+tester again logs in retests the bugif really done changes status to close
+delsere
+open
+also while closed he can mention closing dateand give his comments by add comment
+------------------------------------
+in req and test plan tab you can see this defect under linked defetcsso everything is linked.
+--------------------------------------------
+
+
+---------------------UNIX-----------------------------------------
+
+ls -i inodels -a hiddenls -R subdirls -F formatls -l longlistls    listls -r reverse list
+
+datedate +%Acalcal 2012cal 01 2012cal -3echo "hi"echo -e "hi \n how r u"x=10echo "$x"
+
+
+cd or cd ~ go to login dircd \ go to rootcd .. go to parentcd path go to particular pathcd . stay in same dir
+
+mkdir d1 d2 d3  will create dirmkdir -p l1/l2/l3/l4/l5  level wise dirtree l1 seeing the contents without going in
+
+
+touch temp create a empty filecat>temp write in filectrl d will endcat>>temp appendctrl d will endcat temp display contents
+
+cp file1 file2cp file1 file2 file3 ..filen dircp -r dir1 dir2 
+
+
+mv file1 file2mv file1 file2 file3 ..filen dirmv dir1 dir2 
+
+mv is cut paste
+
+cp is copy paste
+
+rm file      filerm -i file    interactivermdir dir    empty dirrm -r dir    filled dir
+
+
+--------------------------------------------------------------------------------------------------------------
+579 604 368
+---------------------------------------------------------------------------
+
+
+
+find / -name "*.log" -print
+
+ find . -name "*.log" -print
+
+find . -type "d" -print
+
+find :  will find any file/dir/link in the given path based ona particular criteria
+
+/ root
+. for current directory
+.. for parent dirctory
+
+
+
+
+
+
+
+------------------------------------------------
+
+
+
+
+
+
+
+
+grep "unix" gr1        #search unixgrep "u.ix" gr1        #. means any charactergrep "u..ix" gr1grep "u[alm]ix" gr1    #[] means any one of the given charactergrep "u[a-z]ix" gr1    # - means rangegrep "u[^a-z]ix" gr1   # ^ means not inside []grep "^unix" gr1       # ^ means line starting withgrep "unix$" gr1       # $ means line ending withgrep "^$" gr1          # ^$ together means empty linegrep "u\.ix" gr1       # \ means finding as it is special chargrep "un*ix" gr1       # * means 0 or more times prev charfgrep "unix" gr1       #fgrep works with only fixed stringsfgrep "un*ix" gr1      #connot work with reg expegrep "unix|123" gr1   #egrep | means ORegrep "u(ab|ae)ix"gr1  #() means groupingegrep "un+ix" gr1      # + means 1 or more times prev chargrep -n "unix" gr1     #-n option for numbering linesgrep -c "unix" gr1     #-c will give count of linesgrep -n "unix" gr1 gr2  #can find in multiple filesgrep -n "unix" *     
+#* means find in all fil
+
+
+grep -l "unix" *     #-l means only list the names of filesgrep -v "unix" gr1    #-v means list lines not containing the patterngrep "Unix" gr1      #case sensitivitygrep -i "Unix" gr1   #-i for ignore casesgrep "unix" gr1grep -w "unix" gr1    #-w will find the whole word match
+
+
+----------------------------------------------------------------
+
+when any item is created in unixa corresponding datastructure is created for itthat data structure stores all the info abou that item.it is called as inodeinodes are created on disk.and they are arranged in  array.they have index and do not have nameswhen a file is deleted the inode location in the inode array is freeinode contains:typesizelocationref countlast modifiedlast accssedowner idgroup idaccess rights
+-------------------------
+
+type of access rights
+read    4
+write   2
+execute  1
+types of users
+owner
+group
+other
+
+---------------------------------------------------------------------------------
+
+
+vi firsti to inssertesc: w saveesc:wq save and quitsearching patternesc /patterntraversing by nremoving pattern esc:nohlto go to a spec line number 5esc :5going to last lineesc:$removing search highlights:esc: nohlreplacing patternesc :%s/patt1/patt2/esc :%s/patt1/patt2/g esc :%s/patt1/patt2/gcexact word match for search or replace</pattern />setting line numbers:esc:set nuesc :set nonuusing diff files in same vi:e filename
